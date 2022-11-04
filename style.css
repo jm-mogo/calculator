@@ -73,6 +73,7 @@ body {
     font-size: 22px;
     border: 1px outset #f198e3;
     background-color: #fad0f3;
+    transition: 0.2s;
 }
 
 
@@ -86,3 +87,75 @@ body {
     background-color: #ec89dd !important;
 }
 
+@media (max-width: 600px) {
+
+.calculator {
+    width:350px;
+    height:550px;
+    background:#9b9b9b;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.display {
+    width: 310px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+
+.display h1 {
+    font-size: 14px;
+    font-family: Helvetica;
+    margin-right: 22px;
+    margin-top: 12px;
+}
+
+.display p {
+    font-size: 32px;
+    font-family: Helvetica;
+    margin-right: 22px;
+    margin-bottom: 10px;
+}
+
+.topButtons {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    width: 320px;
+    height: 68px;
+    margin: auto;
+}
+
+.topButtons button {
+    font-size: 16px;
+}
+
+.buttons {
+    padding: 20px;
+    padding-top: 10px;
+    display: grid;
+    gap: 5px;
+}
+
+.buttons button {
+    height:75px;
+    width:75px;
+    font-family: Helvetica;
+    font-size: 16px;
+    border: 1px outset #f198e3;
+    background-color: #fad0f3;
+}
+
+.buttons button:hover {
+    background-color: #fad0f3 !important;
+}
+
+.buttons button:active {
+    background-color: #ec89dd !important;
+    transform: scale(1.1);
+	transition: .1s;
+}
+
+}

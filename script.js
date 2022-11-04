@@ -52,6 +52,12 @@ function getResult(btnPressed) {
     if (operator === "-") {
         value = subtract(firstNum, secondNum);
     }
+    if (operator === "×") {
+        value = multiply(firstNum, secondNum);
+    }
+    if (operator === "÷") {
+        value = divide(firstNum, secondNum)
+    }
     
     populateDisplay(value, firstNum, operator, secondNum)
     firstNum = value;
@@ -107,6 +113,12 @@ function clearCalculator() {
     firstNum = 0;
     secondNum = 0;
     operator = "";
+    populateDisplay(value, firstNum, operator, secondNum);
+}
+
+function backSpace() {
+    value = value.toString()
+    value = value.slice(0, -1);
     populateDisplay(value, firstNum, operator, secondNum);
 }
 
