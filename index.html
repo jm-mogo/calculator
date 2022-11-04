@@ -7,34 +7,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator">
         <div class="display">
-            <p>5264</p>
+            <h1></h1>
+            <p>0</p>
         </div>
         <div class="topButtons">
-            <button>CLEAR</button>
+            <button onclick="clearCalculator('hello')">CLEAR</button>
             <button>DELETE</button>
         </div>
         <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>÷</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>×</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>.</button>
-            <button>0</button>
-            <button>=</button>
-            <button>+</button>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="÷" class="operatorBtn">÷</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="×" class="operatorBtn">×</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="-" class="operatorBtn">-</button>
+            <button id="." >.</button>
+            <button id="0">0</button>
+            <button id="=" class="operatorBtn">=</button>
+            <button id="+" class="operatorBtn">+</button>
         </div>
     </div>
 </body>
