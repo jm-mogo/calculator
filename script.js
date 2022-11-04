@@ -34,6 +34,10 @@ function checkOperation(btnPressed) {
         }
     }
 
+    if (btnPressed === "=" && value === '05264') {
+        display.innerHTML = "<p>Kami</p>"
+    }
+
     if (btnPressed === "=") {
         getResult(btnPressed)
     }
@@ -79,7 +83,7 @@ function subtract(num1, num2) {
 }
 
 function multiply(num1, num2) {
-    return num1 * num1;
+    return num1 * num2;
 }
 
 function divide(num1, num2) {
