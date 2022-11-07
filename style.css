@@ -87,6 +87,11 @@ body {
     background-color: #ec89dd !important;
 }
 
+.buttons button:active {
+    transform: scale(1.1);
+	transition: .1s;
+}
+
 @media (max-width: 600px) {
 
 .calculator {
@@ -123,7 +128,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5px;
-    width: 320px;
+    width: 315px;
     height: 68px;
     margin: auto;
 }
